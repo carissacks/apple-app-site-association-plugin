@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 # rubocop:disable Discourse/NoJsonParseResponse
 
-RSpec.describe "apple-app-site-association",:type => :request do
-  describe './wel-known/apple-app-site-association returns the same response as apple-app-site-association' do
+RSpec.describe "apple-app-site-association", type: :request do
+  describe './well-known/apple-app-site-association returns the same response as apple-app-site-association' do
     it 'returns 404 by default' do
       get "/apple-app-site-association"
       expect(response.status).to eq(404)
@@ -18,8 +18,8 @@ RSpec.describe "apple-app-site-association",:type => :request do
           }
         }
       JSON
-      get "/apple-app-site-association"
 
+      get "/apple-app-site-association"
       expect(response.status).to eq(200)
       expect(response.body).to include("applinks")
       expect(response.media_type).to eq('application/json')

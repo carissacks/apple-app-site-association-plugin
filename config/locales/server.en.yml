@@ -1,1 +1,3 @@
 en:
+  site_settings:
+    apple_app_site_association_enabled: "Serve apple-app-site-association in `.well-known` path"

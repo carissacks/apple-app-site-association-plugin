@@ -1,4 +1,4 @@
 plugins:
-  plugin_name_enabled:
+  apple_app_site_association_enabled:
     default: true
     client: true
